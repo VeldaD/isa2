@@ -1,3 +1,4 @@
+package que6;
 
 public class Person {
 	private String name;
