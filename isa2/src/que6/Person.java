@@ -4,50 +4,25 @@ public class Person {
 	private String name;
     private int age;
 
-    // Constructor
-    public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    // Getter for name
-    public String getName() {
-        return name;
-    }
-
-    // Setter for name
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    // Getter for age
-    public int getAge() {
-        return age;
-    }
-
-    // Setter for age
-    public void setAge(int age) {
-        this.age = age;
-    }
-
+    public Person(String Name,int Age) {
+		this.name= Name;
+		this.age= Age;
+	}
+	public String getName() {
+		return name;
+	}
+	public int getAge() {
+		return age;
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		 // Create first instance of Person
-        Person person1 = new Person("Alice", 30);
-
-        // Create second instance of Person
-        Person person2 = new Person("Bob", 25);
-
-        // Print details of first person
-        System.out.println("Details of person1:");
-        System.out.println("Name: " + person1.getName());
-        System.out.println("Age: " + person1.getAge());
-        System.out.println();
-
-        // Print details of second person
-        System.out.println("Details of person2:");
-        System.out.println("Name: " + person2.getName());
-        System.out.println("Age: " + person2.getAge());
+		// Main.java
+		
+	   Person person1 = new Person("Joylin", 20);
+	   Person person2 = new Person("Noela", 20);
+       System.out.println(person1.getName() + " is " + person1.getAge() + " years old.");
+       System.out.println(person2.getName() + " is " + person2.getAge() + " years old.\n");
+		    
 
 	}
 

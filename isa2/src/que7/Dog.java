@@ -10,59 +10,36 @@ public class Dog {
         this.breed = breed;
     }
 
-    // Getter for name
-    public String getName() {
-        return name;
-    }
+    // Setter methods
+    public void setName(String name) { 
+        this.name = name; 
+    } 
 
-    // Setter for name
-    public void setName(String name) {
-        this.name = name;
-    }
+    public void setBreed(String breed) { 
+        this.breed = breed; 
+    } 
 
-    // Getter for breed
-    public String getBreed() {
-        return breed;
-    }
+    // Getter methods
+    public String getName() { 
+        return name; 
+    } 
 
-    // Setter for breed
-    public void setBreed(String breed) {
-        this.breed = breed;
-    }
+    public String getBreed() { 
+        return breed; 
+    } 
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		 // Create first instance of Dog
-        Dog dog1 = new Dog("Buddy", "Labrador");
+    public static void main(String[] args) { 
+        // Create two instances of the Dog class 
+        Dog dog1 = new Dog("Goldy", "Golden Retriever"); 
+        Dog dog2 = new Dog("Frosty", "Beagle"); 
 
-        // Create second instance of Dog
-        Dog dog2 = new Dog("Max", "German Shepherd");
+        // Modify the attributes using the setter methods 
+        dog1.setName("Bunny"); 
+        dog2.setBreed("Shitzu"); 
 
-        // Print details of dogs before modification
-        System.out.println("Details of dog1:");
-        System.out.println("Name: " + dog1.getName());
-        System.out.println("Breed: " + dog1.getBreed());
-        System.out.println();
-
-        System.out.println("Details of dog2:");
-        System.out.println("Name: " + dog2.getName());
-        System.out.println("Breed: " + dog2.getBreed());
-        System.out.println();
-
-        // Modify attributes using setter methods
-        dog1.setName("Rocky");
-        dog2.setBreed("Golden Retriever");
-
-        // Print updated details of dogs
-        System.out.println("Updated details of dog1:");
-        System.out.println("Name: " + dog1.getName());
-        System.out.println("Breed: " + dog1.getBreed());
-        System.out.println();
-
-        System.out.println("Updated details of dog2:");
-        System.out.println("Name: " + dog2.getName());
-        System.out.println("Breed: " + dog2.getBreed());
-
+        // Print the updated values 
+        System.out.println(dog1.getName() + " is a " + dog1.getBreed() + "."); 
+        System.out.println(dog2.getName() + " is a " + dog2.getBreed() + ".");
 	}
 
 }
