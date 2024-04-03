@@ -1,27 +1,40 @@
 package que1;
+import org.junit.Test;
+
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class AddTwoIntegersTest {
 
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+	}
+
 	@Test
-	public void testAdditionPositiveNumbers() {
-        int num1 = 5;
-        int num2 = 10;
-        int expectedResult = 15;
-        int actualResult = AddTwoIntegers.add(num1, num2);
+    public void testAddition() {
+        int first = 5;
+        int second = 4;
+        int expectedResult = 9;
+        int actualResult = first + second;
         assertEquals(expectedResult, actualResult);
     }
 
     @Test
-    public void testAdditionNegativeNumbers() {
-        int num1 = -8;
-        int num2 = -3;
-        int expectedResult = -11;
-        int actualResult = AddTwoIntegers.add(num1, num2);
+    public void testNegativeNumbers() {
+        int first = -2;
+        int second = -7;
+        int expectedResult = -9;
+        int actualResult = first + second;
         assertEquals(expectedResult, actualResult);
-    }
+
+	}
 
 }
