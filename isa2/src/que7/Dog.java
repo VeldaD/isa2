@@ -1,5 +1,5 @@
 package que7;
-
+//velda 237
 public class Dog {
 	private String name;
     private String breed;
